@@ -1,0 +1,122 @@
+header {
+	background-color : #080808;
+}
+
+article,aside,canvas,details,figcaption,figure,
+header,footer,main,menu,nav,section,summary {
+	display: block;
+}
+
+body {
+	-webkit-text-size-adjust: 100%;
+	background : linear-gradient(#FFFFFF, #E0E0E0);
+}
+
+html, body{
+	margin: 0;
+	padding: 0;
+	width : 100%; /* Use overall area */
+	height : 100%;
+	font-family : 'Estrangelo Edessa'
+}
+div#HeaderBk {
+	background-color : #404040;
+	padding 0px 0 0;
+	width : 100%; /* Use overall area */
+}
+div#Header {
+	border : 0px;
+	margin : auto;
+}
+div#FooterBk {
+	background-color : #404040;
+
+    width : 100%; /* Use overall area */
+	color : #3498DB;
+}
+div#Footer {
+	border : 0px;
+	margin : auto;
+}
+
+label {
+	width : 60px;
+    float:left;
+    line-height:24px;
+    font-weight:bold;
+}
+
+h1 {
+	text-align : center;
+	vertical-align : middle;
+	color : #3498DB;
+	font-family : Arial, sans-serif;
+}
+
+h3 {
+	padding : .75em 1em;
+	border : 1px solid #ccc;
+	border-top : 3px solid #3498db;
+	background : -webkit-linear-gradient(top, #fff 0%, #f0f0f0 100%);
+	background : linear-gradient(to bottom, #fff 0%, #f0f0f0 100%);
+	box-shadow : 0 -1px 0 rgba(255, 255, 255, 1) inset;
+}
+
+textarea{
+	width:100%;
+	height:240px;
+}
+
+input, textarea {
+	background-color : #000000;
+	border-color : #000000;
+	color : #3498db;
+	opacity: 0.7;
+	
+	border:1px solid #3498db;
+   border-radius:5px;
+   -webkit-border-radius:5px;
+   -moz-border-radius:5px;
+	
+	-webkit-transition: opacity .5s ease-out;
+	-moz-transition: opacity .5s ease-out;
+	-ms-transition: opacity .5s ease-out;
+	transition: opacity .5s ease-out;
+	
+    margin-bottom:5px;
+    padding:2px 5px;
+}
+
+input[type=button] {
+    margin-top:5px;
+    margin-left:60px;
+    padding:2px 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border:2px solid #06C;
+    background-color:#09F;
+    color:#fff;
+    font-weight:bold;
+}
+
+textarea:hover {
+	opacity: 1;
+	-webkit-opacity: 1;
+	-moz-opacity: 1;
+	filter: alpha(opacity=100);	/* IE lt 8 */
+	-ms-filter: "alpha(opacity=100)"; /* IE 8 */
+	-webkit-transition: opacity .5s ease-out;
+	-moz-transition: opacity .5s ease-out;
+	-ms-transition: opacity .5s ease-out;
+	transition: opacity .5s ease-out;
+}
+input:hover{
+	opacity : 1.0;
+}
+input:focus{
+    border:1px solid #09F;
+    -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3);
+-moz-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3);
+box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3);
+}

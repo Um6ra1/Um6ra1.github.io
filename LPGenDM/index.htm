@@ -1,0 +1,38 @@
+ 
+<html lang=ja>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+		<link rel="stylesheet" type="text/css" href="Style.css">
+		<script type="text/javascript" src="Script.js"></script>
+		<title>ライフポイントジェネレータDM</title>
+		<meta name="ライフポイントジェネレータDM" content="遊戯王DMのライフポイント画像を生成します。">
+	</head>
+	
+	<body>
+		<div id="HeaderBk">
+			<h1>ライフポイントジェネレータDM</h1>
+			<p><span style="color:white;">遊戯王DMのライフポイント画像を生成します。</span></p>
+		</div>
+		
+		
+		
+		<h3>Parameters</h3>
+		<label>Line1:</label>
+		<input type="text" id="text1", size="100%" value="LP" spellcheck="false" oninput="Redraw();">
+		<br>
+		<label>Line2:</label>
+		<input type="text" id="text2", size="100%" value="1000" spellcheck="false" oninput="Redraw();">
+		<br>
+		<input type="button" value="Save" onclick="Save()">
+		
+		<h3>Image</h3>
+		<canvas id="canvas" width="480px" height="320px"></canvas>
+		<div id="FooterBk">
+			Author: <a href=https://twitter.com/e_jPhi>e_jPhi</a>
+		</div>
+	</body>
+</html>
+
+
+
