@@ -54,10 +54,10 @@ _HtmlBegin
 		
 		_H(3, Parameters)
 		_Label(Line1:)
-		<input type="text" id="text1", size="100%" value="LP" spellcheck="false" oninput="Redraw();">
+		<input type="text" id="text1", size="100%" value="ⅬＰ" spellcheck="false" oninput="Redraw();">
 		_BR
 		_Label(Line2:)
-		<input type="text" id="text2", size="100%" value="1000" spellcheck="false" oninput="Redraw();">
+		<input type="text" id="text2", size="100%" value="  4000" spellcheck="false" oninput="Redraw();">
 		_BR
 		<input type="button" value="Save" onclick="Save()">
 		

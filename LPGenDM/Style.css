@@ -2,6 +2,16 @@ header {
 	background-color : #080808;
 }
 
+@font-face {
+    font-family: "cmb";
+    src: url("file:///X:/hp/Um6ra1.github.io/LPGenDM/cmcsc10.ttf");
+}
+
+.mincho {
+    font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+    font-size: 2.4rem;
+}
+
 article,aside,canvas,details,figcaption,figure,
 header,footer,main,menu,nav,section,summary {
 	display: block;
@@ -17,33 +27,34 @@ html, body{
 	padding: 0;
 	width : 100%; /* Use overall area */
 	height : 100%;
-	font-family : 'Estrangelo Edessa'
+	font-family : 'Estrangelo Edessa';
+	word-break: normal;
+	white-space: normal;
 }
+
 div#HeaderBk {
-	background-color : #404040;
-	padding 0px 0 0;
-	width : 100%; /* Use overall area */
+	background-color: #404040;
+	padding: 0px 0 0;
+	width: 100%; /* Use overall area */
 }
-div#Header {
-	border : 0px;
-	margin : auto;
-}
+
 div#FooterBk {
 	background-color : #404040;
 
     width : 100%; /* Use overall area */
 	color : #3498DB;
 }
+
 div#Footer {
 	border : 0px;
 	margin : auto;
 }
 
 label {
-	width : 60px;
-    float:left;
-    line-height:24px;
-    font-weight:bold;
+	width: 60px;
+    float: left;
+    line-height: 24px;
+    font-weight: bold;
 }
 
 h1 {
@@ -54,29 +65,27 @@ h1 {
 }
 
 h3 {
-	padding : .75em 1em;
-	border : 1px solid #ccc;
-	border-top : 3px solid #3498db;
-	background : -webkit-linear-gradient(top, #fff 0%, #f0f0f0 100%);
-	background : linear-gradient(to bottom, #fff 0%, #f0f0f0 100%);
-	box-shadow : 0 -1px 0 rgba(255, 255, 255, 1) inset;
-}
-
-textarea{
-	width:100%;
-	height:240px;
+	padding: .75em 1em;
+	border: 1px solid #ccc;
+	border-top: 3px solid #3498db;
+	background: -webkit-linear-gradient(top, #FFF 0%, #F0F0F0 100%);
+	background: linear-gradient(to bottom, #FFF 0%, #F0F0F0 100%);
+	box-shadow: 0 -1px 0 #FFF inset;
 }
 
 input, textarea {
-	background-color : #000000;
-	border-color : #000000;
-	color : #3498db;
+	width: 80px;
+	padding: 0.8em;
+	outline: none;
+	background-color: #000000;
+	border-color: #000000;
+	color: #3498db;
 	opacity: 0.7;
 	
-	border:1px solid #3498db;
-   border-radius:5px;
-   -webkit-border-radius:5px;
-   -moz-border-radius:5px;
+	border: 1px solid #3498db;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
 	
 	-webkit-transition: opacity .5s ease-out;
 	-moz-transition: opacity .5s ease-out;
@@ -88,16 +97,16 @@ input, textarea {
 }
 
 input[type=button] {
-    margin-top:5px;
-    margin-left:60px;
-    padding:2px 20px;
+    margin-top: 5px;
+    margin-left: 60px;
+    padding: 2px 20px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    border:2px solid #06C;
-    background-color:#09F;
-    color:#fff;
-    font-weight:bold;
+    border: 2px solid #06C;
+    background-color: #09F;
+    color: #fff;
+    font-weight: bold;
 }
 
 textarea:hover {
@@ -115,8 +124,8 @@ input:hover{
 	opacity : 1.0;
 }
 input:focus{
-    border:1px solid #09F;
-    -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3);
--moz-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3);
-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 0 11px, #3498DB;
+    border: 1px solid #3498DB;
+	-webkit-box-shadow: 0px 1px 3px 0px #00FFFF;
+	-moz-box-shadow: 0px 1px 3px 0px #00FFFF;
 }

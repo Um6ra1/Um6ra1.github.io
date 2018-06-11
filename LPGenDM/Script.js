@@ -29,6 +29,11 @@ function Redraw() {
 	ctx.setTransform(1, 0, 0, 1, 0, 0);	// [[a c e]; [b d f]; [0 0 1]], identity matrix
 	ctx.clearRect(0, 0, c.width, c.height);
 	
+	// Enable shadow
+	ctx.shadowOffsetX = 1;
+	ctx.shadowOffsetY = 1;
+	ctx.shadowBlur = 2;
+	
 	{	// Box
 		var g = ctx.createLinearGradient(0, 0, 0, c.height);
 		g.addColorStop(0.0, "#464241");
@@ -62,40 +67,45 @@ function Redraw() {
 	}
 	
 	{	// Text
-		var txt1 = document.getElementById("text1");
-		var txt2 = document.getElementById("text2");
-		var size = 100;
-		var cx = size/2;
-		var cy = size*1.2;
-		var vskip = size*1.4;
-		var g = ctx.createLinearGradient(0, cy-size, 0, cy);
-		g.addColorStop(0.0, "#4E260C");
-		g.addColorStop(0.75, "#F7DFC3");
-		g.addColorStop(1.0, "#764e34");
+		var size = 120;
+		var cx = 30;
+		var cy = 0 + size;
+		var vskip = 40;
 		
-		ctx.fillStyle = g;
-		ctx.font = "Italic " + size + "px 'Times New Roman'";
-		ctx.shadowColor = "#000000";
-		ctx.shadowOffsetX = 1;
-		ctx.shadowOffsetY = 1;
-		ctx.shadowBlur = 2;
-		ctx.fillText(txt1.value, cx, cy);
-
-		ctx.font = "Italic " + size*1.2 + "px 'Times New Roman'";
-		g = ctx.createLinearGradient(0, cy-size + 1.2*size, 0, cy-size + size +1.2*size);
-		g.addColorStop(0.0, "#4E260C");
-		g.addColorStop(0.75, "#F7DFC3");
-		g.addColorStop(1.0, "#764e34");
-		ctx.fillStyle = g;
-		ctx.fillText(txt2.value, cx, cy+vskip);
-		ctx.shadowOffsetX = 0;	// restore
-		ctx.shadowOffsetY = 0;
-		ctx.shadowBlur = 0;
-		
+		{ // Line 1
+			var s = size*0.8;
+			TextGrad(ctx, 0, cy-s, 0, cy);
+			
+			//alert(c.style.letterSpacing);
+			ctx.font = "Italic " + s + "px 'ＭＳ 明朝'";
+			//ctx.font = "Italic " + size + "px 'Times New Roman'";
+			ctx.shadowColor = "#000000";
+			ctx.fillText(document.getElementById("text1").value, cx, cy);
+			cy += s;
+		}
+		cy += vskip;
+		{ // Line 2
+			var s = size;
+			TextGrad(ctx, 0, cy-s, 0, cy);
+			ctx.font = "Italic " + s + "px 'ＭＳ 明朝'";
+			ctx.fillText(document.getElementById("text2").value, cx, cy);
+			//ctx.shadowOffsetX = 0;	// restore
+			//ctx.shadowOffsetY = 0;
+			//ctx.shadowBlur = 0;
+		}
 	}
 }
 
+function TextGrad(ctx, x1, y1, x2, y2) {
+	var g = ctx.createLinearGradient(x1, y1, x2, y2);
+	g.addColorStop(0.0, "#4E260C");
+	g.addColorStop(0.75, "#F7DFC3");
+	g.addColorStop(1.0, "#764e34");
+	ctx.fillStyle = g;
+}
+
+
 window.onload = () => {
-	
+	Redraw();
 }
 
