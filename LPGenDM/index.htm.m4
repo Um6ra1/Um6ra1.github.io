@@ -15,6 +15,9 @@ define(_CommentBegin, `<!--')
 define(_CommentEnd, `-->')
 define(_BodyBegin, `<body>')
 define(_BodyEnd, `</body>')
+define(_BeginUList, `<ul>')
+define(_EndUList, `</ul>')
+define(_LItem, `<li>$1</li>')
 define(_P, `<p>$1</p>')
 define(_H, `<h$1>$2</h$1>')
 define(_Label, `<label>$1</label>')
@@ -47,10 +50,15 @@ _HtmlBegin
 	_BodyBegin
 		_DivBegin(id="HeaderBk")
 			_H(1, _TITLE_NAME)
-			_P(_COL(white, _CONTENT))
+			_COL(
+				white, _P(_CONTENT)
+				_BeginUList
+					_LItem(一行目に「ＬＰ」や「攻撃力」を入力します)
+					_LItem(二行目に「数値」を入力します)
+					_LItem(文字は全角、数値は半角とすると綺麗に出ます)
+				_EndUList
+			)
 		_DivEnd
-		
-		
 		
 		_H(3, Parameters)
 		_Label(Line1:)
