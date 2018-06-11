@@ -68,6 +68,21 @@ _HtmlBegin
 		<input type="text" id="text2", size="100%" value="  4000" spellcheck="false" oninput="Redraw();">
 		_BR
 		<input type="button" value="Save" onclick="Save()">
+		_BR
+		_Label(　)
+		<a href="https://twitter.com/share" class="twitter-share-button" data-via="e_jPhi" data-hashtags="ライフポイント・ジェネレータ">Tweet</a>
+		<script>
+			!function(d, s, id){
+				var js,fjs = d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+				if(!d.getElementById(id)){
+					js = d.createElement(s);
+					js.id = id;
+					js.src = p+'://platform.twitter.com/widgets.js';
+					fjs.parentNode.insertBefore(js,fjs);
+				}
+			}
+			(document, 'script', 'twitter-wjs');
+		</script>
 		
 		_H(3, Image)
 		_Canvas(canvas, 480px, 320px, a)
