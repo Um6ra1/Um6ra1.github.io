@@ -1,7 +1,3 @@
-header {
-	background-color : #080808;
-}
-
 @font-face {
     font-family: "cmb";
     src: url("file:///X:/hp/Um6ra1.github.io/LPGenDM/cmcsc10.ttf");
@@ -12,42 +8,41 @@ header {
     font-size: 2.4rem;
 }
 
-article,aside,canvas,details,figcaption,figure,
-header,footer,main,menu,nav,section,summary {
-	display: block;
-}
-
 body {
 	-webkit-text-size-adjust: 100%;
 	background : linear-gradient(#FFFFFF, #E0E0E0);
 }
 
-html, body{
-	margin: 0;
-	padding: 0;
+html, body {
 	width : 100%; /* Use overall area */
 	height : 100%;
+	min-height: 100%;
+	
+	position: relative;
+	padding: 0;
+	margin: 0;
+	
 	font-family : 'Estrangelo Edessa';
 	word-break: normal;
-	white-space: normal;
+	white-space: normal; 
 }
 
 div#HeaderBk {
-	background-color: #404040;
-	padding: 0px 0 0;
 	width: 100%; /* Use overall area */
+	
+	padding: 0px 0 0;
+	background-color: #404040;
 }
 
-div#FooterBk {
-	background-color : #404040;
+div#FooterBk {	
+    width : 100%;
+	height: 5em;
+	
+	bottom: 0;
+	position: absolute;
 
-    width : 100%; /* Use overall area */
 	color : #3498DB;
-}
-
-div#Footer {
-	border : 0px;
-	margin : auto;
+	background-color : #404040;
 }
 
 label {
