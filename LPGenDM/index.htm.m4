@@ -61,12 +61,33 @@ _HtmlBegin
 		_DivEnd
 		
 		_H(3, Parameters)
-		_Label(Line1:)
-		<input type="text" id="text1", size="100%" value="ⅬＰ" spellcheck="false" oninput="Redraw();">
-		_BR
-		_Label(Line2:)
-		<input type="text" id="text2", size="100%" value="  4000" spellcheck="false" oninput="Redraw();">
-		_BR
+		_DivBegin(class="ParamRow")
+			_Label(Height:)
+			<input type="text" id="textHeight", size="100%" value="400" spellcheck="false" oninput="Redraw();">
+		_DivEnd
+		
+		_DivBegin(class="ParamRow")
+			_DivBegin(class="ParamCol")
+				_Label(Line1:)
+				<input type="text" id="text1", size="100%" value="ⅬＰ" spellcheck="false" oninput="Redraw();">
+			_DivEnd
+			_DivBegin(class="ParamCol")
+				_Label(Italic:)
+				<input type="checkbox" id="isItalic1", size="100%" checked="checked" oninput="Redraw();">
+			_DivEnd
+		_DivEnd
+		
+		_DivBegin(class="ParamRow")
+			_DivBegin(class="ParamCol")
+				_Label(Line2:)
+				<input type="text" id="text2", size="100%" value=" 4000" spellcheck="false" oninput="Redraw();">
+			_DivEnd
+			_DivBegin(class="ParamCol")
+				_Label(Italic:)
+				<input type="checkbox" id="isItalic2", size="100%" checked="checked" oninput="Redraw();">
+			_DivEnd
+		_DivEnd
+		
 		<input type="button" value="Save" onclick="Save()">
 		_BR
 		_Label(　)
@@ -85,7 +106,7 @@ _HtmlBegin
 		</script>
 		
 		_H(3, Image)
-		_Canvas(canvas, 480px, 320px, a)
+		_Canvas(canvas, 0px, 0px, a)
 		_DivBegin(id="FooterBk")
 			Author: <a href=https://twitter.com/e_jPhi>e_jPhi</a>
 		_DivEnd

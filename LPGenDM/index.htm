@@ -22,12 +22,33 @@
 		</div>
 		
 		<h3>Parameters</h3>
-		<label>Line1:</label>
-		<input type="text" id="text1", size="100%" value="ⅬＰ" spellcheck="false" oninput="Redraw();">
-		<br>
-		<label>Line2:</label>
-		<input type="text" id="text2", size="100%" value="  4000" spellcheck="false" oninput="Redraw();">
-		<br>
+		<div class="ParamRow">
+			<label>Height:</label>
+			<input type="text" id="textHeight", size="100%" value="400" spellcheck="false" oninput="Redraw();">
+		</div>
+		
+		<div class="ParamRow">
+			<div class="ParamCol">
+				<label>Line1:</label>
+				<input type="text" id="text1", size="100%" value="ⅬＰ" spellcheck="false" oninput="Redraw();">
+			</div>
+			<div class="ParamCol">
+				<label>Italic:</label>
+				<input type="checkbox" id="isItalic1", size="100%" checked="checked" oninput="Redraw();">
+			</div>
+		</div>
+		
+		<div class="ParamRow">
+			<div class="ParamCol">
+				<label>Line2:</label>
+				<input type="text" id="text2", size="100%" value=" 4000" spellcheck="false" oninput="Redraw();">
+			</div>
+			<div class="ParamCol">
+				<label>Italic:</label>
+				<input type="checkbox" id="isItalic2", size="100%" checked="checked" oninput="Redraw();">
+			</div>
+		</div>
+		
 		<input type="button" value="Save" onclick="Save()">
 		<br>
 		<label>　</label>
@@ -46,7 +67,7 @@
 		</script>
 		
 		<h3>Image</h3>
-		<canvas id="canvas" width="480px" height="320px"></canvas>
+		<canvas id="canvas" width="0px" height="0px"></canvas>
 		<div id="FooterBk">
 			Author: <a href=https://twitter.com/e_jPhi>e_jPhi</a>
 		</div>

@@ -26,7 +26,11 @@ html, body {
 	word-break: normal;
 	white-space: normal; 
 }
-
+/*
+canvas {
+	width: 50%;
+}
+*/
 div#HeaderBk {
 	width: 100%; /* Use overall area */
 	
@@ -43,6 +47,11 @@ div#FooterBk {
 
 	color : #3498DB;
 	background-color : #404040;
+}
+
+div.ParamCol {
+display: block;
+display: inline-block; 
 }
 
 label {
@@ -103,6 +112,7 @@ input[type=button] {
     color: #fff;
     font-weight: bold;
 }
+
 
 textarea:hover {
 	opacity: 1;
