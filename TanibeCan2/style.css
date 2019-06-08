@@ -1,0 +1,332 @@
+* {
+	box-sizing: border-box;
+}
+  
+body{
+	width: 100%;
+	background-color: #fefefe;
+	
+	/* Reset styles */
+	padding: 0;
+	margin: 0;
+	scroll-behavior: smooth;
+	
+	font-family: 'Lato', sans-serif;
+}
+ 
+#Field{ /* Entire::Field */
+	width: 100%;
+	margin: 0 auto;
+}
+
+#MenuBar{
+	width: 100%;
+	height:100px;
+	top: 0px;
+	left: 0px;
+	position: fixed;
+	background-color: #FFF;
+	text-align: center;
+	z-index: 2;
+	color:#252525;
+	padding: 0.7em 0.0em 0 0.0em;
+	text-decoration:none;
+	
+	/* Dropdown shadow */
+	-webkit-box-shadow: 0 0 10px #000;
+    -moz-box-shadow: 0 0 10px #000;
+	box-shadow: 0 0 10px #000;
+}
+.Sections {
+	display: table;
+	width: 100%;
+}.Sec {
+	display: table-cell;
+	vertical-align: middle;
+}
+#MenuBar a {
+	display:block;
+	width: 100%;
+    color: #222;
+    text-decoration: none;
+	
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+#MenuBar li {
+	margin: 0 0px;
+	display: inline-block;	/* Align horizontaly */
+	
+	width:20%;
+	height: 2em;
+	background: rgba(0,0,0,0.0);
+	text-decoration: none;
+	line-height: 2em;
+	padding: 0 0 0 0;
+	outline: 0;	
+}
+#MenuBar li a{
+    color: #222;
+}
+#MenuBar li a:hover{
+	border-bottom: 2px solid #eb44a8;
+}
+#MenuBar li.Active{
+	border-bottom: 2px solid #eb44a8;
+}
+
+
+#Header{ /* Entire::Field::header */
+	width:100%;
+	height: 100px;
+	margin: 0 auto;
+	//padding: 15px;
+	//padding-bottom: 12px;
+	background-color:#f7f7f7;
+	font-family: sans-serif;
+}
+
+
+#MainField{ /* Entire::Field::header::main_field */
+	width:100%;
+	margin: 0 auto;
+}
+ 
+/*#Side{ Entire::Field::header::main_field::side
+	width:20%;
+	background-color:#393737;
+	float:left;
+	//border : 1px solid #ccc;
+	border-top : 2px solid #3498db;
+	//background : -webkit-linear-gradient(top, #fff 0%, #f0f0f0 100%);
+	//background : linear-gradient(to bottom, #fff 0%, #f0f0f0 100%);
+	//box-shadow : 0 -1px 0 rgba(255, 255, 255, 1) inset;
+} */
+ 
+#main{
+	width:100%;
+	margin:0 auto;
+	background-color:#FFC;
+	text-align: center;
+}
+
+
+.TextField {
+	width:80%;
+	background: rgba(0,0,0,0.0);	/* Transparent BG */
+	display: inline-block;	/* Centering */
+	margin: 3em 0 2em 0; /*Haut, droite, bas, gauche*/
+}
+.TextField  h2 {
+	width:100%;
+	margin:1em auto;
+	font-size: 2em;
+	line-height: 1em;
+	text-align: center;
+	color: #222;
+	border-bottom:1px solid #222;
+	padding-top: 1.5em;
+	padding-bottom: 0.5em;
+}
+
+
+.page-scroll .btn-circle i.animated {
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 1s;
+}
+#Footer{
+	text-align: center;
+	width:100%;
+	margin:0 0;
+	background-color:#393737;
+	color:#e1e1e1;
+	margin: 0;
+	border: 0;
+
+	padding: 0.5em 1.5em;
+
+	overflow: hidden;
+	font-size: 0.6em;
+}
+
+table  {
+	border-collapse: collapse;
+	width: 100%;
+	table-layout: fixed;
+	color: #222;
+}
+.Side {
+	width: 20%;
+
+}
+.tr .Gauche {	/* td -> Gauche (alias) */
+	text-align: right;
+	border-bottom: 1px dotted #222;
+	height: 2em;
+	width: 50%;
+	padding-right: 2em;
+}
+.tr .Droite {
+	text-align: left;
+	border-bottom: 1px dotted #222;
+	height: 2em;
+	width: 80%;
+}
+
+/* Sections */
+#Greeting {
+	background-color:#fefefe;
+	background: url("./bg_Wasi.png");
+	background-size: 100% auto, cover;
+	background-attachment: fixed, fixed;
+	background-position: top left, bottom center;
+	background-repeat: repeat, no-repeat;
+}
+#Greeting  h2{
+	color: #222;
+	border-color: #222;
+}
+#Greeting div{
+	color: #222;
+}
+
+
+#Intro {
+	background: url("./o.png"), url("./t01.jpg");
+	background-size: 100% auto, cover;
+	background-attachment: fixed, fixed;
+	background-position: top left, bottom center;
+	background-repeat: repeat, no-repeat;
+}
+
+
+#Members {
+}
+#Members table {
+	border-collapse: separate;
+	border-spacing: .5em .5em;
+}
+#Members table td{
+	background: rgba(1, 1, 1, 0.7);
+	border-bottom:1px solid #222;
+	border-radius: 10px;
+	//display: table-cell;
+	//vertical-align: middle;
+}
+#Members table td img{
+	border-radius: 50%; /* cut out Circle */
+    width:  64px;
+    height: 64px;
+}
+#Members table td.EE{
+	background: rgba(1, 7f, 1, 0.7);
+}
+
+
+			
+/* Autres */
+
+.fadein {
+    opacity : 0;
+    transform : translate(0, 50px);
+    transition : all 300ms;
+}
+.fadein.scrollin {
+    opacity : 1;
+    transform : translate(0, 0);
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0 auto;
+	//font-family: Montserrat,sans-serif;
+}
+
+a {
+    color: #e5e5e5;
+    text-decoration: none;
+	
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+a:hover,
+a:focus {
+    color: #2ea2ff;
+    background-color: rgba(255,255,255,.2);
+    background-color: rgba(255,255,255,.2);
+	
+    -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3);
+}
+
+a:active {
+    outline: 0;
+    background-color: rgba(255,255,255,.2);
+}
+
+ol, ul {
+	list-style: none;	/* Don't display dots */
+}
+
+.Popup {
+	background-color: #FFF;
+	box-shadow: 0 0 0 9999px rgba(0, 0, 0, .8);
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: 70vw;
+	height: 55vw;
+	//overflow-y: scroll;
+}
+#PopupOn {
+	display: none;
+}
+#PopupOn:checked + .Popup {
+	display: block;
+}
+
+.icon-close{
+  background: #000;
+  color: #fff;
+  font-size: 30px;
+  padding: 0 10px;
+  position: absolute;
+  right: 0;
+  border-radius: 50%;
+}
+
+.btn-close{
+  background: #000;
+  border-radius: 10px;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  margin: 10px auto;
+  width: 95%;
+  text-align: center;
+}
+
+.btn-open{
+  background: #fff;
+  border-radius: 10px;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  margin: 10px auto;
+  width: 95%;
+  text-align: center;
+}
+
+.PopupContent {
+  margin: 40px auto 40px auto;
+  width: 70%;
+}
