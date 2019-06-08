@@ -37,6 +37,12 @@ body{
     -moz-box-shadow: 0 0 10px #000;
 	box-shadow: 0 0 10px #000;
 }
+@media screen and (min-width:0px){ /* Display width > 0px */
+//	#MenuBar{ font-size: 10px; }
+}
+@media screen and (min-width:300px){ /* Display width > 300px */
+//	#MenuBar{ font-size: 15px; }
+}
 .Sections {
 	display: table;
 	width: 100%;
@@ -55,6 +61,7 @@ body{
     transition: all .2s ease-in-out;
 }
 #MenuBar li {
+	overflow:hidden;
 	margin: 0 0px;
 	display: inline-block;	/* Align horizontaly */
 	
@@ -151,6 +158,9 @@ body{
 	overflow: hidden;
 	font-size: 0.6em;
 }
+#Footer a {
+    color: #e5e5e5;
+}
 
 table  {
 	border-collapse: collapse;
@@ -195,7 +205,7 @@ table  {
 
 
 #Intro {
-	background: url("./o.png"), url("./t01.jpg");
+	background: url("image/o.png"), url("image/t01.jpg");
 	background-size: 100% auto, cover;
 	background-attachment: fixed, fixed;
 	background-position: top left, bottom center;
@@ -224,10 +234,22 @@ table  {
 #Members table td.EE{
 	background: rgba(1, 7f, 1, 0.7);
 }
-
+#Members table td a{
+    color: #eee;
+}
+#Members table td img{
+	max-width: 64px;
+	width: 90%;
+	height:auto;
+}
 
 			
 /* Autres */
+
+img{
+	max-width:100%;
+	height:auto;
+}
 
 .fadein {
     opacity : 0;
@@ -243,9 +265,25 @@ h1,h2,h3,h4,h5,h6 {
 	margin: 0 auto;
 	//font-family: Montserrat,sans-serif;
 }
+h3 {
+	width:100%;
+	margin:1em auto;
+	font-size: 1em;
+	line-height: 1em;
+	text-align: center;
+	color: #222;
+	border-bottom:1px solid #222;
+	padding-top: 1.5em;
+	padding-bottom: 0.5em;
+}
+
+p.Date {
+	font-weight: bold;
+	text-decoration:underline;
+}
 
 a {
-    color: #e5e5e5;
+    color: #173a55;
     text-decoration: none;
 	
     -webkit-transition: all .2s ease-in-out;
