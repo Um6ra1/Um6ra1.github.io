@@ -100,22 +100,11 @@ body{
 	width:100%;
 	margin: 0 auto;
 }
- 
-/*#Side{ Entire::Field::header::main_field::side
-	width:20%;
-	background-color:#393737;
-	float:left;
-	//border : 1px solid #ccc;
-	border-top : 2px solid #3498db;
-	//background : -webkit-linear-gradient(top, #fff 0%, #f0f0f0 100%);
-	//background : linear-gradient(to bottom, #fff 0%, #f0f0f0 100%);
-	//box-shadow : 0 -1px 0 rgba(255, 255, 255, 1) inset;
-} */
- 
+
 #main{
 	width:100%;
 	margin:0 auto;
-	background-color:#FFC;
+	background-color:rgb(255, 255, 255);
 	text-align: center;
 }
 
@@ -245,7 +234,10 @@ table  {
 	height:auto;
 }
 
-			
+#Samples {
+}
+
+
 /* Autres */
 
 img{
@@ -283,6 +275,10 @@ h3 {
 p.Date {
 	font-weight: bold;
 	text-decoration:underline;
+}
+p.Note {
+	text-align: left;
+	font-size: small;
 }
 
 a {
