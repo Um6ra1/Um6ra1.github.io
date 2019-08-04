@@ -178,18 +178,6 @@ table  {
 }
 
 /* Sections */
-#Greeting {
-	background-color:#fefefe;
-}
-#Greeting  h2{
-	color: #222;
-	border-color: #222;
-}
-#Greeting div{
-	color: #222;
-}
-
-
 #Intro {
 	background: url("image/o.png"), url("image/t01.jpg");
 	background-size: 100% auto, cover;
@@ -198,6 +186,14 @@ table  {
 	background-repeat: repeat, no-repeat;
 }
 
+
+#Samples {
+}
+.SamplesGaralleyy {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
 
 #Members {
 	background: url("image/o.png"), url("image/bg.png");
@@ -234,7 +230,15 @@ table  {
 	height:auto;
 }
 
-#Samples {
+#Greeting {
+	background-color:#fefefe;
+}
+#Greeting  h2{
+	color: #222;
+	border-color: #222;
+}
+#Greeting div{
+	color: #222;
 }
 
 

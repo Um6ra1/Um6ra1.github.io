@@ -51,7 +51,7 @@
 			</table>
 
 		<ul>
-			<li class="Sec Active"><a href="#Intro"> <i class="fas fa-book"></i> Intro</a></li>
+			<li class="Sec Active"><a href="#Intro"> <i class="fas fa-book"></i> Book</a></li>
 			<li class="Sec"><a href="#Samples"> <i class="fas fa-book"></i> Samples</a></li>
 			<li class="Sec"><a href="#Members"> <i class="fas fa-address-card"></i> Members</a></li>
 			<li class="Sec"><a href="#Greeting"> <i class="fas fa-grin-wink"></i> Comments</a></li>
@@ -70,7 +70,7 @@
 				<div class="page-scroll">
 				<div class="TextField">
 				
-				<h2>Introduction</h2>
+				<h2>Book</h2>
 		
 				<span  style="font-size:large;">
 				<strong>
@@ -157,14 +157,21 @@
 				<div class="TextField">
 				
 				<h2>Samples</h2>
-				<br>
+				<br/>
 				<div class="SamplesGaralley">
+					<a href="image/LeTitre.png" class="Fadein" data-fancybox="g-sample" data-caption="**** by ****"><img src="image/LeTitre.png"></a>
+					<a href="image/LeTitre.png" data-fancybox="g-sample" data-caption="**** by ****"><img src="image/LeTitre.png" ></a>
+					<a href="image/LeTitre.png" data-fancybox="g-sample" data-caption="**** by ****"><img src="image/LeTitre.png" ></a>
+					<a href="image/LeTitre.png" data-fancybox="g-sample" data-caption="**** by ****"><img src="image/LeTitre.png" ></a>
+
+					<!-- class=fadein: Menubar indicator does not work ...
 					<a href="image/LeTitre.png" class="Fadein" data-fancybox="g-sample" data-caption="**** by ****"><img src="image/LeTitre.png" class=fadein></a>
 					<a href="image/LeTitre.png" data-fancybox="g-sample" data-caption="**** by ****"><img src="image/LeTitre.png" class=fadein></a>
 					<a href="image/LeTitre.png" data-fancybox="g-sample" data-caption="**** by ****"><img src="image/LeTitre.png" class=fadein></a>
 					<a href="image/LeTitre.png" data-fancybox="g-sample" data-caption="**** by ****"><img src="image/LeTitre.png" class=fadein></a>
+					-->
 				</div>
-		
+				
 				</div>
 				</div>
 				</div>
@@ -174,6 +181,7 @@
 		<div id="main">
 			<section id="Members" class="Members">
 				<div class="fadein">
+				<div class="page-scroll">
 				<div class="TextField">
 				
 				<h2>Members</h2>
@@ -194,7 +202,6 @@
 				</div>
 				</div>
 				-->
-
 				
 				<table class="Member">
 				<tbody>
@@ -250,14 +257,15 @@
 				
 				</div>
 				</div>
+				</div>
 			</section>
 		</div>
 		
 		<div id="main">
-			<div class="TextField">
 				<section id="Greeting" class="Greeting">
 				<div class="fadein">
 				<div class="page-scroll">
+				<div class="TextField">
 				
 				<h2>Comments</h2>
 				
@@ -409,7 +417,6 @@ JAEPO行ってきました。当然です。
 </div>
 	
 
-<script src="./jquery-1.11.3.min.js" ></script>
 <script>
 $(window).on('load' ,function(){
 });
@@ -429,7 +436,7 @@ $(function(){
     });
 });
 
-$(function(){ // Update under line
+$(function(){ // Update under line on Menubar
     $('.Sec').on('click', function(){
 		$('.Sec').removeClass('Active');
         $(this).toggleClass('Active');
