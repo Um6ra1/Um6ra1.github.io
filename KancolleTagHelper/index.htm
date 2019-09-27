@@ -1,0 +1,64 @@
+ 
+<html lang=ja>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+		<link rel="stylesheet" type="text/css" href="Style.css">
+		<script type="text/javascript" src="Script.js"></script>
+		<title>Tag-Helper (艦これ)</title>
+		<meta name="Tag-Helper" content="艦これの絵をpixivやニコニコにアップロードする際のタグ入力を支援します。">
+		
+		<!-- jQuery -->
+		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.3.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	</head>
+	
+	<body>
+		
+		<div id="Content">
+			<h1 class="Caption"> Tag-Helper </h1>
+		
+			<form>
+			<input type="tel" id="textSrc" placeholder="艦娘の名前を入れてください" oninput="UpdateText();">
+			</form>
+
+			<br />
+			<br />
+			
+			<p>テキストをクリックするとコピーできます</p>
+			
+			<input type="text" id="tags4Pixiv2" readonly="readonly" onclick="CopyText();">
+			<br />
+			<input type="text" id="tags4Nico" readonly="readonly" onclick="CopyText();">
+		<br>
+		<label>　</label>
+		<a href="https://twitter.com/share" class="twitter-share-button" data-via="e_jPhi" data-hashtags="Tag-Helper" data-text=" ">Tweet</a>
+		
+			
+		</div> <!-- Content -->
+		
+		<script>
+			!function(d, s, id){
+				var js,fjs = d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+				if(!d.getElementById(id)){
+					js = d.createElement(s);
+					js.id = id;
+					js.src = p+'://platform.twitter.com/widgets.js';
+					fjs.parentNode.insertBefore(js,fjs);
+				}
+			}
+			(document, 'script', 'twitter-wjs');
+		</script>
+		
+				
+		<div id="Footer">
+			<p>
+				&copy;Copyright 2019 - <a href="https://twitter.com/e_jPhi">Vii</a>
+			</p>
+		</div>
+			
+	</body>
+</html>
+
+
+
